@@ -13,7 +13,7 @@ public class controller1 {
 
     @GetMapping("/call1")
     public String call1(){
-        return "call1";
+        return "call1" + "new Change";
     }
 
     @GetMapping("/call3")
