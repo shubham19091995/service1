@@ -2,17 +2,14 @@ node {
 stage('clone'){
  bat "git clone https://github.com/shubham871234/service1.git"
 }
-stage('Inside'){
-bat "cd service1/"
-}
     stage('clean') {
-       bat "mvn clean"
+       bat "mvn clean:service1"
     }
     stage('test'){
-    "mvn test"
+    bat "mvn test:service1"
     }
     stage("build"){
-    "mvn build"
+    bat "mvn build:service1"
     }
 
 
