@@ -1,7 +1,7 @@
 node {
 
     stage('hello') {
-        echo 'hello World'
+        mvn clean
     }
 
 
