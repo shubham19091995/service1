@@ -9,7 +9,7 @@ stage('clone'){
     bat "mvn test -f service1"
     }
     stage("build"){
-    bat "mvn build -f service1"
+    bat "mvn install -f service1"
     }
 
 
