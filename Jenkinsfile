@@ -1,7 +1,7 @@
 node {
 
     stage('clean') {
-        "mvn clean"
+       bat "mvn clean"
     }
     stage('test'){
     "mvn test"
