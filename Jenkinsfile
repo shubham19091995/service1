@@ -1,4 +1,5 @@
 node {
+stages{
     stage('clean') {
         sh 'mvn clean'
     }
@@ -7,5 +8,6 @@ node {
     }
      stage('build') {
             sh 'mvn build'
+        }
         }
 }
