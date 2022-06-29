@@ -1,7 +1,7 @@
 node {
 
     stage('hello') {
-        mvn clean
+        sh "mvn clean"
     }
 
 
